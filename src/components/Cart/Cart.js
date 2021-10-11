@@ -4,10 +4,12 @@ import './Cart.css'
 const Cart = (props) => {
     // console.log(props.cart);
     const {cart} = props;
-    let total = 0;
-    for(const product of cart){
-        total = total + product.price;
-    }
+
+    const total = cart.reduce((previous, current) =>previous + current.price, 0)
+    // let total = 0;
+    // for(const product of cart){
+    //     total = total + product.price;
+    // }
     return (
         <div>
             <h1>Items order:{props.cart.length}</h1>
