@@ -5,7 +5,7 @@ import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import ReactStars from 'react-rating-stars-component'
 
 const Product = (props) => {
-    console.log(props);
+    // console.log(props);
     const {name, price, img, seller, stock, star} = props.product;
 
     const firstExample = {
