@@ -2,15 +2,15 @@
     margin-left: 10px;
 }
 .cart h3{
-    font-size:25px;
+    font: size 20px;
     margin-left:30px;
 }
 .cart p{
     margin-left:30px;
-    font-size:20px;
+    font-size:17px;
 }
 .cart table{
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align:left;
 }
 .row{

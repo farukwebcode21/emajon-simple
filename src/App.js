@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import OrderReview from './components/OrderReview/OrderReview';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Shop from './components/Shop/Shop';
 
 
@@ -24,6 +25,9 @@ const App =()=> {
           </Route>
           <Route path="/review">
             <OrderReview/>
+          </Route>
+          <Route path="/placeorder">
+            <PlaceOrder/>
           </Route>
           <Route exact path="*">
             <PageNotFound/>

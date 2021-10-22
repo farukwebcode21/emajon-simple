@@ -6,7 +6,7 @@ import ReactStars from 'react-rating-stars-component'
 
 const Product = (props) => {
     // console.log(props);
-    const {name, price, img, seller, stock, star} = props.product;
+    const {name, price, img, seller, stock} = props.product;
 
     const firstExample = {
         size: 30,

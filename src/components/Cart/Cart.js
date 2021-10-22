@@ -1,9 +1,9 @@
 import React from 'react'
 import './Cart.css'
 
-const Cart = (props) => {
-    // console.log(props.cart);
+const  Cart = (props) => {
     const {cart} = props;
+    // console.log(props);
     // console.log(cart);
 
     // const totalReducer =(previous, product) => previous + product.price;
@@ -14,7 +14,7 @@ const Cart = (props) => {
     for(const product of cart){ 
         if(!product.quantity){
             product.quantity = 1;
-        }
+        } 
         total = total + product.price * product.quantity;
         totalQuantity = totalQuantity + product.quantity;
     }
@@ -53,6 +53,7 @@ const Cart = (props) => {
                     </tr>
                 </tbody>
             </table>
+            {props.children}
         </div>
     )
 }
